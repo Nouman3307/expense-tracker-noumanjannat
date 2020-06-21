@@ -1,0 +1,38 @@
+.cont{
+  max-width: 400px;
+  min-height: 450px;
+  margin: 0 auto;
+}
+.incexp{
+  display: flex;
+  justify-content: space-around;
+  background-color: aqua;
+  box-shadow: 0 0 10px gray;
+}
+.hader{
+  text-align: center;
+}
+
+.trans-form input{
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px 0;
+}
+
+
+
+.history > li{
+  display: flex;
+  justify-content: space-around;
+  background-color: aqua;
+  box-shadow: 0 0 10px gray;
+  padding: 10px 5px;
+  margin: 5px 0;
+}
+
+h4{
+  margin: 0;
+}
+h3{
+  margin: 0;
+}
