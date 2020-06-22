@@ -1,12 +1,16 @@
-const transreducer=((action,state)=>{
+const transreducer=(state,action)=>{
     switch(action.type){
         case "Add_trans":{
-            return[action.payload , ...state]
+            console.log("Trnsreducer");
+            console.log(state);
+            return {  ...state,
+                trans: [...state.trans , action.payload]
+            }
         }
         default:
             return state;
     }
 
-})
+}
 
 export default transreducer;
