@@ -3,7 +3,7 @@ const transreducer=(state,action)=>{
         case "Add_trans":{
             console.log("Trnsreducer");
             console.log(state);
-            return {  ...state,
+            return { 
                 trans: [...state.trans , action.payload]
             }
         }

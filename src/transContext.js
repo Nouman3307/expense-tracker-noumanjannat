@@ -1,11 +1,8 @@
-import React , {createContext ,useReducer, Children} from 'react';
+import React , {createContext ,useReducer} from 'react';
 import transreducer from './transReducwer';
 
 const initialtrans={trans:[
     
-    {amount:200 , desc:"cash"},
-    {amount:500 , desc:"book"},
-    {amount:500 , desc:"fees"}
 
 ]}
 export const transContext=createContext(initialtrans);

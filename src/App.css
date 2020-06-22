@@ -30,6 +30,13 @@
   margin: 5px 0;
 }
 
+.inc{
+  color: green;
+}
+.exp{
+  color: red;
+}
+
 h4{
   margin: 0;
 }
