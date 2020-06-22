@@ -14,6 +14,8 @@ export default function History()
                 desc: Desc
             });
         }
+        console.log("Printing history");
+        console.log(trans);
     return(
         <div>
             <div className="hader">

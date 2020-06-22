@@ -1,15 +1,16 @@
 import React , {createContext ,useReducer, Children} from 'react';
 import transreducer from './transReducwer';
 
-const initialtrans=[
+const initialtrans={trans:[
+    
     {amount:200 , desc:"cash"},
     {amount:500 , desc:"book"},
     {amount:500 , desc:"fees"}
 
-]
+]}
 export const transContext=createContext(initialtrans);
 
-export const TransactionProvider=({})=>{
+export const TransactionProvider=({children})=>{
     const [state, dispatch] = useReducer (transreducer, initialtrans);
 
     function addtransaction(tansobj){
@@ -24,10 +25,10 @@ export const TransactionProvider=({})=>{
     }
     return(
         <transContext.Provider value={{
-            trans: state,
+            trans: state.trans,
             addtransaction
         }}>
-            {Children}
+            {children}
         </transContext.Provider>
     )
 }
